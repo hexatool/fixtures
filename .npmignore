@@ -3,7 +3,7 @@
 .yarn
 spec
 .editorconfig
-.eslintrc.js
+.eslintrc.cjs
 .yarnrc.yml
 renovate.json
 tsconfig.json
