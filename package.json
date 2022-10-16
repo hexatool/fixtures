@@ -1,0 +1,54 @@
+{
+  	"name": "@hexatool/fixtures",
+  	"version": "1.0.0",
+  	"description": "Easily create and maintain test fixtures in the file system",
+  	"keywords": [
+  	  	"jest",
+  	  	"ava",
+  	  	"mocha",
+  	  	"test",
+  	  	"fixtures",
+  	  	"tmp",
+  	  	"temp"
+  	],
+  	"homepage": "https://github.com/hexatool/fixtures",
+  	"bugs": {
+  	  	"url": "https://github.com/hexatool/fixtures/issues"
+  	},
+  	"repository": {
+  	  	"type": "git",
+  	  	"url": "https://github.com/hexatool/fixtures"
+  	},
+  	"author": "MarioMH8",
+  	"license": "MIT",
+  	"scripts": {
+  	  	"lint": "eslint .",
+  	  	"lint:fix": "eslint --fix .",
+		"test": "vitest"
+  	},
+  	"dependencies": {
+  	  	"fs-extra": "10.1.0",
+  	  	"globby": "13.1.2",
+  	  	"signal-exit": "3.0.7",
+  	  	"tempy": "3.0.0"
+  	},
+  	"devDependencies": {
+  	  	"@hexatool/eslint-config-typescript": "1.0.0",
+  	  	"@hexatool/tsconfig": "1.0.0",
+  	  	"@types/fs-extra": "9.0.13",
+  	  	"@types/node": "18.11.0",
+  	  	"@types/signal-exit": "3.0.1",
+  	  	"eslint": "8.25.0",
+  	  	"typescript": "4.8.4",
+  	  	"vite": "3.1.8",
+  	  	"vitest": "0.24.1"
+  	},
+  	"engines": {
+  	  	"node": ">=16"
+  	},
+  	"volta": {
+  	  	"node": "16.18.0",
+  	  	"yarn": "1.22.19"
+  	},
+  	"packageManager": "yarn@3.2.4"
+}

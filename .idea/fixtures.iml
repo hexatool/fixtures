@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/.github" />
+      <excludeFolder url="file://$MODULE_DIR$/.yarn" />
+      <excludePattern pattern=".npmignore" />
+      <excludePattern pattern=".yarnrc*" />
+      <excludePattern pattern=".pnp*" />
+      <excludePattern pattern=".eslintignore" />
+      <excludePattern pattern=".gitignore" />
+      <excludePattern pattern="LICENSE" />
+      <excludePattern pattern="tsconfig.*" />
+      <excludePattern pattern="vite.*" />
+      <excludePattern pattern="babel.*" />
+      <excludePattern pattern="*.lock" />
+      <excludePattern pattern="nest-cli.json" />
+      <excludePattern pattern="webpack.config.js" />
+      <excludePattern pattern="renovate.json" />
+      <excludePattern pattern=".editorconfig" />
+      <excludePattern pattern=".eslintrc.js" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
