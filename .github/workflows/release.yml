@@ -57,7 +57,7 @@ jobs:
     publish:
         name: Code check
         runs-on: ubuntu-latest
-        needs: [code-check,test]
+        needs: [ code-check,test ]
         permissions:
             contents: 'read'
             id-token: 'write'
