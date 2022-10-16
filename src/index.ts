@@ -1,9 +1,11 @@
 import { basename, dirname, join } from 'node:path';
 
-import { copySync, realpathSync, removeSync } from 'fs-extra';
+import fsExtra from 'fs-extra';
 import { globby } from 'globby';
 import onExit from 'signal-exit';
 import { temporaryDirectory } from 'tempy';
+
+const { copySync, realpathSync, removeSync } = fsExtra;
 
 export interface FixturesOptions {
 	cleanup: boolean;
