@@ -24,6 +24,7 @@
       <excludePattern pattern=".editorconfig" />
       <excludePattern pattern=".eslintrc.cjs" />
       <excludePattern pattern="vite.config.ts" />
+      <excludePattern pattern="tsconfig.build.json" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

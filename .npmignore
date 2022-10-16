@@ -7,5 +7,6 @@ spec
 .yarnrc.yml
 renovate.json
 tsconfig.json
+tsconfig.build.json
 vite.config.ts
 yarn.lock

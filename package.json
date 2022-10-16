@@ -41,7 +41,7 @@
   	"scripts": {
   	  	"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
   	  	"build:code": "vite build",
-  	  	"build:definitions": "tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist/types",
+		"build:definitions": "tsc --project tsconfig.build.json",
   	  	"lint": "eslint .",
   	  	"lint:fix": "eslint --fix .",
   	  	"test": "vitest --no-isolate",
