@@ -1,6 +1,5 @@
 import * as fs from 'node:fs';
 import path from 'node:path';
-
 import fse from 'fs-extra';
 import { describe, expect, it, vi } from 'vitest';
 

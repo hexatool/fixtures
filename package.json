@@ -24,7 +24,9 @@
   	"scripts": {
   	  	"lint": "eslint .",
   	  	"lint:fix": "eslint --fix .",
-		"test": "vitest"
+  	  	"test": "vitest --no-isolate",
+  	  	"test:coverage": "vitest run --no-isolate --coverage",
+  	  	"typecheck": "tsc --noEmit"
   	},
   	"dependencies": {
   	  	"fs-extra": "10.1.0",
@@ -38,6 +40,7 @@
   	  	"@types/fs-extra": "9.0.13",
   	  	"@types/node": "18.11.0",
   	  	"@types/signal-exit": "3.0.1",
+  	  	"@vitest/coverage-c8": "0.24.3",
   	  	"eslint": "8.25.0",
   	  	"typescript": "4.8.4",
   	  	"vite": "3.1.8",

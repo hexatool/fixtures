@@ -1,3 +1,7 @@
 {
-	"extends": "@hexatool/tsconfig"
+	"extends": "@hexatool/tsconfig",
+	"compilerOptions": {
+		"baseUrl": "."
+	},
+	"include": ["src", "spec"]
 }
