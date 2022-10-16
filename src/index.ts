@@ -1,4 +1,5 @@
 import { basename, dirname, join } from 'node:path';
+
 import { copySync, realpathSync, removeSync } from 'fs-extra';
 import { globby } from 'globby';
 import onExit from 'signal-exit';

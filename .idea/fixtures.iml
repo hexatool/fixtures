@@ -22,7 +22,7 @@
       <excludePattern pattern="webpack.config.js" />
       <excludePattern pattern="renovate.json" />
       <excludePattern pattern=".editorconfig" />
-      <excludePattern pattern=".eslintrc.js" />
+      <excludePattern pattern=".eslintrc.cjs" />
       <excludePattern pattern="vite.config.ts" />
     </content>
     <orderEntry type="inheritedJdk" />
