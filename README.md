@@ -24,7 +24,7 @@
                 data.json
             index.spec.ts
    ```
-3. You can use it in test like that
+3. You can use it with yur favourite testing library
     ```typescript
     // src/nested/index.spec.ts
    
@@ -62,7 +62,7 @@
 ## API
 
 ```typescript
-    import fixtures from '@hexatool/fixtures';
+import fixtures from '@hexatool/fixtures';
 ```
 
 ### `fixtures(dirname, opts)`
