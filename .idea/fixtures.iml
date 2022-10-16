@@ -7,6 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.github" />
       <excludeFolder url="file://$MODULE_DIR$/.yarn" />
       <excludeFolder url="file://$MODULE_DIR$/coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/dist" />
       <excludePattern pattern=".npmignore" />
       <excludePattern pattern=".yarnrc*" />
       <excludePattern pattern=".pnp*" />
@@ -22,6 +23,7 @@
       <excludePattern pattern="renovate.json" />
       <excludePattern pattern=".editorconfig" />
       <excludePattern pattern=".eslintrc.js" />
+      <excludePattern pattern="vite.config.ts" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

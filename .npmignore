@@ -1,7 +1,11 @@
 .github
 .idea
 .yarn
-.yarnrc.yml
-yarn.lock
-renovate.json
+spec
 .editorconfig
+.eslintrc.js
+.yarnrc.yml
+renovate.json
+tsconfig.json
+vite.config.ts
+yarn.lock
