@@ -21,27 +21,27 @@
   	},
   	"author": "MarioMH8",
   	"license": "MIT",
-	"type": "module",
-	"files": [
-		"dist"
-	],
-	"main": "dist/hexatool-fixtures.cjs",
-	"module": "dist/hexatool-fixtures.mjs",
-	"types": "dist/hexatool-fixtures.d.ts",
-	"exports": {
-		".": {
-			"types": "./dist/hexatool-fixtures.d.ts",
-			"node": {
-				"import": "./dist/hexatool-fixtures.mjs",
-				"require": "./dist/hexatool-fixtures.cjs"
-			},
-			"default": "./dist/hexatool-fixtures.mjs"
-		}
-	},
-	"scripts": {
-		"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
-		"build:code": "vite build",
-		"build:definitions": "tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outFile dist/hexatool-fixtures.d.ts",
+  	"type": "module",
+  	"files": [
+  	  	"dist"
+  	],
+  	"main": "dist/hexatool-fixtures.cjs",
+  	"module": "dist/hexatool-fixtures.mjs",
+  	"types": "dist/types/index.d.ts",
+  	"exports": {
+  	  	".": {
+  	  	  	"types": "./dist/types/index.d.ts",
+  	  	  	"node": {
+  	  	  	  	"import": "./dist/hexatool-fixtures.mjs",
+  	  	  	  	"require": "./dist/hexatool-fixtures.cjs"
+  	  	  	},
+  	  	  	"default": "./dist/hexatool-fixtures.mjs"
+  	  	}
+  	},
+  	"scripts": {
+  	  	"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
+  	  	"build:code": "vite build",
+  	  	"build:definitions": "tsc src/index.ts --declaration --emitDeclarationOnly --esModuleInterop --outDir dist/types",
   	  	"lint": "eslint .",
   	  	"lint:fix": "eslint --fix .",
   	  	"test": "vitest --no-isolate",
