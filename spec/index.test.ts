@@ -1,10 +1,10 @@
 import * as fs from 'node:fs';
 import path from 'node:path';
 
-import fse from 'fs-extra';
 import { describe, expect, it, vi } from 'vitest';
 
 import fixtures from '../src';
+import * as fse from '../src/fs';
 
 const FIXTURES_DIR = path.join(__dirname, 'fixtures');
 const NESTED_DIR = path.join(FIXTURES_DIR, 'nested');

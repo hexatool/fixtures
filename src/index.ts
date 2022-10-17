@@ -1,11 +1,10 @@
 import { basename, dirname, join } from 'node:path';
 
-import fsExtra from 'fs-extra';
 import { globby } from 'globby';
 import onExit from 'signal-exit';
 import { temporaryDirectory } from 'tempy';
 
-const { copySync, realpathSync, removeSync } = fsExtra;
+import { copySync, realpathSync, removeSync } from './fs';
 
 export interface FixturesOptions {
 	cleanup: boolean;
@@ -14,7 +13,7 @@ export interface FixturesOptions {
 }
 
 const DEFAULT_OPTIONS: FixturesOptions = {
-	glob: '{fixtures,__fixtures__}/*',
+	glob: ['fixtures', '__fixtures__'],
 	cleanup: true,
 	root: '/',
 };

@@ -1,6 +1,6 @@
 {
   	"name": "@hexatool/fixtures",
-  	"version": "1.0.2",
+  	"version": "1.0.3",
   	"description": "Easily create and maintain test fixtures in the file system",
   	"keywords": [
   	  	"jest",
@@ -41,7 +41,7 @@
   	"scripts": {
   	  	"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
   	  	"build:code": "vite build",
-		"build:definitions": "tsc --project tsconfig.build.json",
+  	  	"build:definitions": "tsc --project tsconfig.build.json",
   	  	"lint": "eslint .",
   	  	"lint:fix": "eslint --fix .",
   	  	"test": "vitest --no-isolate",
