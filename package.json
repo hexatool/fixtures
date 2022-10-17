@@ -1,6 +1,6 @@
 {
   	"name": "@hexatool/fixtures",
-  	"version": "1.0.3",
+  	"version": "1.0.4",
   	"description": "Easily create and maintain test fixtures in the file system",
   	"keywords": [
   	  	"jest",
@@ -25,16 +25,10 @@
   	"files": [
   	  	"dist"
   	],
-  	"main": "dist/hexatool-fixtures.cjs",
-  	"module": "dist/hexatool-fixtures.mjs",
-  	"types": "dist/types/index.d.ts",
   	"exports": {
   	  	".": {
   	  	  	"types": "./dist/types/index.d.ts",
-  	  	  	"node": {
-  	  	  	  	"import": "./dist/hexatool-fixtures.mjs",
-  	  	  	  	"require": "./dist/hexatool-fixtures.cjs"
-  	  	  	},
+			"import": "./dist/hexatool-fixtures.mjs",
   	  	  	"default": "./dist/hexatool-fixtures.mjs"
   	  	}
   	},

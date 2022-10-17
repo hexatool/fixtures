@@ -5,7 +5,7 @@ export default defineConfig({
 	build: {
 		target: "ESNext",
 		lib: {
-			formats: ["es", "cjs"],
+			formats: ["es"],
 			fileName: (format) => `hexatool-fixtures.${format === "es" ? "mjs" : "cjs"}`,
 			entry: resolve(__dirname, 'src/index.ts'),
 		},
