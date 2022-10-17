@@ -1,6 +1,6 @@
 {
   	"name": "@hexatool/fixtures",
-  	"version": "1.0.5",
+  	"version": "1.0.7",
   	"description": "Easily create and maintain test fixtures in the file system",
   	"keywords": [
   	  	"jest",
@@ -25,14 +25,12 @@
   	"files": [
   	  	"dist"
   	],
+	"main": "./dist/hexatool-fixtures.mjs",
+	"module": "./dist/hexatool-fixtures.mjs",
+	"types": "./dist/types/index.d.ts",
   	"exports": {
   	  	".": "./dist/hexatool-fixtures.mjs"
   	},
-	"typesVersions": {
-		"*": {
-			"index.d.ts": ["./dist/types/index.d.ts"]
-		}
-	},
   	"scripts": {
   	  	"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
   	  	"build:code": "vite build",
