@@ -344,7 +344,7 @@ __metadata:
   resolution: "@hexatool/fixtures@workspace:."
   dependencies:
     "@hexatool/eslint-config-typescript": 1.0.0
-    "@hexatool/tsconfig": 1.0.0
+    "@hexatool/tsconfig": 18.0.0
     "@types/fs-extra": 9.0.13
     "@types/node": 18.11.0
     "@types/signal-exit": 3.0.1
@@ -360,10 +360,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hexatool/tsconfig@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@hexatool/tsconfig@npm:1.0.0"
-  checksum: 970a5224db342100249cec19749a5fb936cb11d1311d989982318706a47fd3602e95b845fc4b3218430db024876df52cf7b5cae4f350865bd45b4056ebcc19c5
+"@hexatool/tsconfig@npm:18.0.0":
+  version: 18.0.0
+  resolution: "@hexatool/tsconfig@npm:18.0.0"
+  checksum: c31c81ae7a6d44eadc11ef3d1016cf391f5b49444349e2095dbde3291f773530462941319eb90a48383858f7196a65e6ff26535a20df5686af3e266a1479d1c0
   languageName: node
   linkType: hard
 
