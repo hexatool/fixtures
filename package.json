@@ -51,7 +51,7 @@
   	  	"@hexatool/eslint-config-typescript": "1.0.0",
   	  	"@hexatool/tsconfig": "1.0.0",
   	  	"@types/fs-extra": "9.0.13",
-  	  	"@types/node": "18.11.0",
+  	  	"@types/node": "18.11.7",
   	  	"@types/signal-exit": "3.0.1",
   	  	"@vitest/coverage-c8": "0.24.3",
   	  	"eslint": "8.25.0",
@@ -63,7 +63,7 @@
   	  	"node": ">=16"
   	},
   	"volta": {
-  	  	"node": "16.18.0",
+  	  	"node": "18.12.0",
   	  	"yarn": "1.22.19"
   	},
   	"packageManager": "yarn@3.2.4"

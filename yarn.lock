@@ -346,7 +346,7 @@ __metadata:
     "@hexatool/eslint-config-typescript": 1.0.0
     "@hexatool/tsconfig": 1.0.0
     "@types/fs-extra": 9.0.13
-    "@types/node": 18.11.0
+    "@types/node": 18.11.7
     "@types/signal-exit": 3.0.1
     "@vitest/coverage-c8": 0.24.3
     eslint: 8.25.0
@@ -560,10 +560,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.11.0":
+"@types/node@npm:*":
   version: 18.11.0
   resolution: "@types/node@npm:18.11.0"
   checksum: f27f899ab428e5732f04fadadc9203f44bdf3abf56474540ee27da90e4f2ba133faf87263cada4d2271955f92ee6a142bd50683c86290fe5070c19aac44fd654
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:18.11.7":
+  version: 18.11.7
+  resolution: "@types/node@npm:18.11.7"
+  checksum: 69d630825cf6fbf580d08d76a4d4836ef8c34ed4fe0842221ade87d275f517099cbfabe8e22397208e564bd24926db97699ab9db5c091383269a432b336665e2
   languageName: node
   linkType: hard
 
