@@ -25,9 +25,9 @@
   	"files": [
   	  	"dist"
   	],
-	"main": "./dist/hexatool-fixtures.mjs",
-	"module": "./dist/hexatool-fixtures.mjs",
-	"types": "./dist/types/index.d.ts",
+  	"main": "./dist/hexatool-fixtures.mjs",
+  	"module": "./dist/hexatool-fixtures.mjs",
+  	"types": "./dist/types/index.d.ts",
   	"exports": {
   	  	".": "./dist/hexatool-fixtures.mjs"
   	},
@@ -63,8 +63,8 @@
   	  	"node": "18.12.0",
   	  	"yarn": "1.22.19"
   	},
-	"engines": {
-		"node": ">=12"
-	},
+  	"engines": {
+  	  	"node": ">=12"
+  	},
   	"packageManager": "yarn@3.2.4"
 }
