@@ -49,7 +49,7 @@
   	},
   	"devDependencies": {
   	  	"@hexatool/eslint-config-typescript": "1.0.0",
-  	  	"@hexatool/tsconfig": "1.0.0",
+  	  	"@hexatool/tsconfig": "18.0.0",
   	  	"@types/fs-extra": "9.0.13",
   	  	"@types/node": "18.11.0",
   	  	"@types/signal-exit": "3.0.1",
