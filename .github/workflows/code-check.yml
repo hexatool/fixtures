@@ -1,11 +1,9 @@
 name: Code check & test
 
 on:
-    push:
-        branches: [ main ]
     pull_request:
         branches: [ main ]
-        types: [ opened, synchronize ]
+        types: [ opened, synchronize, reopened, edited ]
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
@@ -25,9 +23,8 @@ jobs:
             -   name: Setup Node
                 uses: actions/setup-node@v3
                 with:
-                    node-version: '16'
+                    node-version: 'lts/*'
                     cache: 'yarn'
-                    registry-url: 'https://registry.npmjs.org'
 
             -   name: Install dependencies
                 run: yarn install --immutable
@@ -50,9 +47,8 @@ jobs:
             -   name: Setup Node
                 uses: actions/setup-node@v3
                 with:
-                    node-version: '16'
+                    node-version: 'lts/*'
                     cache: 'yarn'
-                    registry-url: 'https://registry.npmjs.org'
 
             -   name: Install dependencies
                 run: yarn install --immutable
