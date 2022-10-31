@@ -1,70 +1,70 @@
 {
-  	"name": "@hexatool/fixtures",
-  	"version": "1.0.7",
-  	"description": "Easily create and maintain test fixtures in the file system",
-  	"keywords": [
-  	  	"jest",
-  	  	"ava",
-  	  	"mocha",
-  	  	"test",
-  	  	"fixtures",
-  	  	"tmp",
-  	  	"temp"
-  	],
-  	"homepage": "https://github.com/hexatool/fixtures",
-  	"bugs": {
-  	  	"url": "https://github.com/hexatool/fixtures/issues"
-  	},
-  	"repository": {
-  	  	"type": "git",
-  	  	"url": "https://github.com/hexatool/fixtures"
-  	},
-  	"author": "MarioMH8",
-  	"license": "MIT",
-  	"type": "module",
-  	"files": [
-  	  	"dist"
-  	],
-  	"main": "./dist/hexatool-fixtures.mjs",
-  	"module": "./dist/hexatool-fixtures.mjs",
-  	"types": "./dist/types/index.d.ts",
-  	"exports": {
-  	  	".": "./dist/hexatool-fixtures.mjs"
-  	},
-  	"scripts": {
-  	  	"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
-  	  	"build:code": "vite build",
-  	  	"build:definitions": "tsc --project tsconfig.build.json",
-  	  	"lint": "eslint .",
-  	  	"lint:fix": "eslint --fix .",
-  	  	"test": "vitest --no-isolate",
-  	  	"test:coverage": "vitest run --no-isolate --coverage",
-  	  	"typecheck": "tsc --noEmit"
-  	},
-  	"dependencies": {
-  	  	"fs-extra": "10.1.0",
-  	  	"globby": "13.1.2",
-  	  	"signal-exit": "3.0.7",
-  	  	"tempy": "3.0.0"
-  	},
-  	"devDependencies": {
-  	  	"@hexatool/eslint-config-typescript": "1.0.0",
-  	  	"@hexatool/tsconfig": "18.0.0",
-  	  	"@types/fs-extra": "9.0.13",
-  	  	"@types/node": "18.11.7",
-  	  	"@types/signal-exit": "3.0.1",
-  	  	"@vitest/coverage-c8": "0.24.3",
-  	  	"eslint": "8.26.0",
-  	  	"typescript": "4.8.4",
-  	  	"vite": "3.2.0",
-  	  	"vitest": "0.24.3"
-  	},
-  	"volta": {
-  	  	"node": "18.12.0",
-  	  	"yarn": "1.22.19"
-  	},
+	"name": "@hexatool/fixtures",
+	"version": "1.0.7",
+	"description": "Easily create and maintain test fixtures in the file system",
+	"keywords": [
+		"jest",
+		"ava",
+		"mocha",
+		"test",
+		"fixtures",
+		"tmp",
+		"temp"
+	],
+	"homepage": "https://github.com/hexatool/fixtures",
+	"bugs": {
+		"url": "https://github.com/hexatool/fixtures/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hexatool/fixtures"
+	},
+	"author": "MarioMH8",
+	"license": "MIT",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/hexatool-fixtures.mjs",
+	"module": "./dist/hexatool-fixtures.mjs",
+	"types": "./dist/types/index.d.ts",
+	"exports": {
+		".": "./dist/hexatool-fixtures.mjs"
+	},
+	"scripts": {
+		"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
+		"build:code": "vite build",
+		"build:definitions": "tsc --project tsconfig.build.json",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"test": "vitest --no-isolate",
+		"test:coverage": "vitest run --no-isolate --coverage",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"fs-extra": "10.1.0",
+		"globby": "13.1.2",
+		"signal-exit": "3.0.7",
+		"tempy": "3.0.0"
+	},
+	"devDependencies": {
+		"@hexatool/eslint-config-typescript": "1.0.0",
+		"@hexatool/tsconfig": "18.0.0",
+		"@types/fs-extra": "9.0.13",
+		"@types/node": "18.11.7",
+		"@types/signal-exit": "3.0.1",
+		"@vitest/coverage-c8": "0.24.3",
+		"eslint": "8.26.0",
+		"typescript": "4.8.4",
+		"vite": "3.2.0",
+		"vitest": "0.24.3"
+	},
+	"volta": {
+		"node": "18.12.0",
+		"yarn": "3.2.4"
+	},
 	"engines": {
 		"node": ">=14.16 || >=16.0.0"
 	},
-  	"packageManager": "yarn@3.2.4"
+	"packageManager": "yarn@3.2.4"
 }
