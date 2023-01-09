@@ -1,10 +1,11 @@
+import { realpathSync } from 'node:fs';
 import { basename, dirname, join } from 'node:path';
 
-import { globby } from 'globby';
+import copy from '@hexatool/fs-copy';
+import remove from '@hexatool/fs-remove';
+import { makeTemporaryDir } from '@hexatool/fs-temporary';
+import { fdir as Builder } from 'fdir';
 import onExit from 'signal-exit';
-import { temporaryDirectory } from 'tempy';
-
-import { copySync, realpathSync, removeSync } from './fs';
 
 export interface FixturesOptions {
 	cleanup: boolean;
@@ -13,7 +14,7 @@ export interface FixturesOptions {
 }
 
 const DEFAULT_OPTIONS: FixturesOptions = {
-	glob: ['fixtures', '__fixtures__'],
+	glob: '{fixtures,__fixtures__}/*',
 	cleanup: true,
 	root: '/',
 };
@@ -32,7 +33,7 @@ export class Fixtures {
 		let err;
 		for (const temp of this.created) {
 			try {
-				removeSync(temp);
+				remove(temp);
 			} catch (e) {
 				err = e;
 			}
@@ -43,24 +44,31 @@ export class Fixtures {
 		}
 	}
 
-	async copy(name: string): Promise<string> {
-		const src = await this.find(name);
+	copy(name: string): string {
+		const src = this.find(name);
 		const dest = join(this.temp(), name);
-		copySync(src, dest);
+		copy(src, dest);
 
 		return dest;
 	}
 
-	async find(name: string): Promise<string> {
+	find(name: string): string {
 		let search = this.cwd;
 		let match;
 		do {
-			/* eslint no-await-in-loop: "warn" */
-			const paths = await globby(this.options.glob, {
-				cwd: search,
-				onlyFiles: false,
-				absolute: true,
-			});
+			const globs = (
+				typeof this.options.glob === 'string' ? [this.options.glob] : this.options.glob
+			).map(g => join(search, g));
+
+			const paths = (
+				new Builder()
+					.withFullPaths()
+					.withMaxDepth(2)
+					.withDirs()
+					.glob(...globs)
+					.crawl(search)
+					.sync() as string[]
+			).map(p => (p.endsWith('/') ? p.slice(0, -1) : p));
 
 			const matches = paths.find(filePath => basename(filePath) === name);
 
@@ -86,7 +94,7 @@ export class Fixtures {
 	}
 
 	temp(): string {
-		const tmp = temporaryDirectory();
+		const tmp = makeTemporaryDir();
 		const tempDir = realpathSync(tmp);
 		this.created.push(tempDir);
 
