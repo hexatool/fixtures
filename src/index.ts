@@ -1,10 +1,10 @@
-import {realpathSync} from 'node:fs';
-import {basename, dirname, join} from 'node:path';
+import { realpathSync } from 'node:fs';
+import { basename, dirname, join } from 'node:path';
 
 import copy from '@hexatool/fs-copy';
 import remove from '@hexatool/fs-remove';
-import {makeTemporaryDir} from '@hexatool/fs-temporary';
-import {fdir as Builder} from 'fdir';
+import { makeTemporaryDir } from '@hexatool/fs-temporary';
+import { fdir as Builder } from 'fdir';
 import onExit from 'signal-exit';
 
 export interface FixturesOptions {

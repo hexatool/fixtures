@@ -2,7 +2,7 @@ import * as fs from 'node:fs';
 import path from 'node:path';
 
 import remove from '@hexatool/fs-remove';
-import {describe, expect, it, vi} from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import fixtures from '../src';
 
@@ -91,7 +91,7 @@ describe('@hexatool/fixtures', () => {
 	});
 	describe('options.glob', () => {
 		it('should works', () => {
-			const f = fixtures(NESTED_DIR, {glob: ['other-fixtures/*']});
+			const f = fixtures(NESTED_DIR, { glob: ['other-fixtures/*'] });
 			const file = f.find('file.txt');
 			const expected = path.join(FIXTURES_DIR, 'other-fixtures', 'file.txt');
 			expect(file).toBe(expected);
@@ -99,7 +99,7 @@ describe('@hexatool/fixtures', () => {
 	});
 	describe('options.root', () => {
 		it('should works', () => {
-			const f = fixtures(NESTED_DIR, {root: NESTED_DIR});
+			const f = fixtures(NESTED_DIR, { root: NESTED_DIR });
 			expect(() => f.find('foo')).toThrow();
 		});
 	});
