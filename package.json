@@ -42,7 +42,7 @@
   	  	"typecheck": "tsc --noEmit"
   	},
   	"dependencies": {
-  	  	"fs-extra": "10.1.0",
+  	  	"fs-extra": "11.1.0",
   	  	"globby": "13.1.2",
   	  	"signal-exit": "3.0.7",
   	  	"tempy": "3.0.0"
@@ -50,7 +50,7 @@
   	"devDependencies": {
   	  	"@hexatool/eslint-config-typescript": "1.0.0",
   	  	"@hexatool/tsconfig": "18.0.0",
-  	  	"@types/fs-extra": "9.0.13",
+  	  	"@types/fs-extra": "11.0.0",
   	  	"@types/node": "18.11.7",
   	  	"@types/signal-exit": "3.0.1",
   	  	"@vitest/coverage-c8": "0.24.3",
