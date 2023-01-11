@@ -3,7 +3,7 @@ name: Code check & test
 on:
     pull_request:
         branches: [ main ]
-        types: [ opened, synchronize, reopened, edited ]
+        types: [ opened, synchronize ]
 
 jobs:
     code-check:
@@ -45,6 +45,7 @@ jobs:
                 with:
                     node-version: 'lts/*'
                     cache: 'yarn'
+                    registry-url: 'https://registry.npmjs.org'
 
             -   name: Install dependencies
                 run: yarn install --immutable

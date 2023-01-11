@@ -35,11 +35,11 @@
 		"build": "vite build",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"publish": "yarn changeset publish",
+		"publish": "$npm_execpath changeset publish",
 		"test": "vitest --no-isolate",
 		"test:coverage": "vitest run --no-isolate --coverage",
 		"typecheck": "tsc --noEmit",
-		"version": "yarn changeset version"
+		"version": "$npm_execpath changeset version"
 	},
 	"dependencies": {
 		"@hexatool/fs-copy": "0.0.1-next.0",
