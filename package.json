@@ -1,6 +1,6 @@
 {
 	"name": "@hexatool/fixtures",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Easily create and maintain test fixtures in the file system",
 	"keywords": [
 		"jest",
