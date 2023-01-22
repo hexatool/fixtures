@@ -38,5 +38,5 @@ jobs:
             -   name: Install dependencies
                 run: yarn install --immutable
 
-            -   name: Lint
+            -   name: Test
                 run: yarn test
