@@ -25,27 +25,29 @@
 	"files": [
 		"dist"
 	],
-	"main": "./dist/hexatool-fixtures.mjs",
 	"module": "./dist/hexatool-fixtures.mjs",
-	"types": "./dist/types/src/index.d.ts",
+	"types": "./dist/index.d.ts",
 	"exports": {
-		".": "./dist/hexatool-fixtures.mjs"
+		".": {
+			"default": "./dist/hexatool-fixtures.mjs",
+			"types": "./dist/index.d.ts"
+		}
 	},
 	"scripts": {
 		"build": "vite build",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"publish": "$npm_execpath changeset publish",
+		"publish": "changeset publish",
 		"test": "vitest --no-isolate",
 		"test:coverage": "vitest run --no-isolate --coverage",
 		"typecheck": "tsc --noEmit",
-		"version": "$npm_execpath changeset version"
+		"version": "changeset version"
 	},
 	"dependencies": {
-		"@hexatool/fs-copy": "0.0.1-next.0",
-		"@hexatool/fs-remove": "0.0.1-next.0",
-		"@hexatool/fs-stat": "0.0.1-next.0",
-		"@hexatool/fs-temporary": "0.0.1-next.2",
+		"@hexatool/fs-copy": "0.0.1-next.3",
+		"@hexatool/fs-remove": "0.0.1-next.3",
+		"@hexatool/fs-stat": "0.0.1-next.3",
+		"@hexatool/fs-temporary": "0.0.1-next.5",
 		"fdir": "5.3.0",
 		"picomatch": "2.3.1",
 		"signal-exit": "3.0.7"
@@ -58,20 +60,18 @@
 		"@types/signal-exit": "3.0.1",
 		"@vitest/coverage-c8": "0.27.3",
 		"eslint": "8.32.0",
-		"rollup-plugin-typescript2": "0.34.1",
 		"typescript": "4.9.4",
 		"vite": "4.0.4",
+		"vite-plugin-dts": "1.7.1",
+		"vite-tsconfig-paths": "4.0.5",
 		"vitest": "0.27.3"
+	},
+	"engines": {
+		"node": ">=14.16 || >=16.0.0"
 	},
 	"volta": {
 		"node": "18.13.0",
 		"yarn": "3.3.1"
 	},
-	"engines": {
-		"node": ">=14.16 || >=16.0.0"
-	},
-	"packageManager": "yarn@3.3.1",
-	"publishConfig": {
-		"access": "public"
-	}
+	"packageManager": "yarn@3.3.1"
 }

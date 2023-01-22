@@ -6,49 +6,17 @@
   Easily create and maintain test fixtures in the file system.
 </p>
 
-## How to use
+## Installation
 
-1. Install the dependency
-   ```bash
-   npm install --save-dev @hexatool/fixtures
-   ```
-2. Giving this workspace
-    ```
-   project
-    └───src
-    │   └───fixtures
-    │       └───examples/...
-    │           samples.txt
-    └───nested
-        └───fixtures
-                data.json
-            index.spec.ts
-   ```
-3. You can use it with yur favourite testing library
-    ```typescript
-    // src/nested/index.spec.ts
-   
-    import { describe, expect, it, vi } from 'vitest';
-    import fixtures from '@hexatool/fixtures';
-    const f = fixtures(__dirname);
-    
-    test('finding a fixture', t => {
-        const filePath = f.find('samples.txt'); // "/project/src/fixtures/samples.txt"
-        // ...
-    });
-    
-    test('copying a file', t => {
-        const tmpPath = f.copy('data.json'); //
-        // "/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/a9fb0decd08179eb6cf4691568aa2018/data.json"
-        // (from /project/src/nested/fixtures/samples.txt)
-    });
-    
-    test('copying a directory', t => {
-        const tmpPath = f.copy('examples');
-        // "/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/4f504b9edb5ba0e89451617bf9f971dd/examples"
-        // (from /project/src/fixtures/examples)
-    });
-    ```
+```bash
+npm install --save-dev fixtures
+```
+
+**Using yarn**
+
+```bash
+yarn add fixtures -dev
+```
 
 ## What it does
 
@@ -131,6 +99,46 @@ const f = fixtures(__dirname, { cleanup: false });
 Set the parent directory to stop searching for fixtures.
 
 Default: `"/"`
+
+## How to use
+
+1. Giving this workspace
+    ```
+   project
+    └───src
+        └───fixtures
+        │   └───examples/...
+        │       samples.txt
+        └───nested
+            └───fixtures
+                    data.json
+                index.spec.ts
+   ```
+2. You can use it with your favourite testing library
+    ```typescript
+    // src/nested/index.spec.ts
+   
+    import { describe, expect, it, vi } from 'vitest';
+    import fixtures from '@hexatool/fixtures';
+    const f = fixtures(__dirname);
+    
+    test('finding a fixture', t => {
+         const filePath = f.find('samples.txt');
+         // "/project/src/fixtures/samples.txt"
+    });
+    
+    test('copying a file', t => {
+         const tmpPath = f.copy('data.json'); //
+         // "/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/a9fb0decd08179eb6cf4691568aa2018/data.json"
+         // (from /project/src/nested/fixtures/samples.txt)
+    });
+    
+    test('copying a directory', t => {
+         const tmpPath = f.copy('examples');
+         // "/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/4f504b9edb5ba0e89451617bf9f971dd/examples"
+         // (from /project/src/fixtures/examples)
+    });
+    ```
 
 ## Hexatool Code Quality Standards
 

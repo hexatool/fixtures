@@ -1,12 +1,13 @@
+.changeset
 .github
 .idea
 .yarn
 spec
 .editorconfig
-.eslintrc.cjs
+.eslintignore
+.eslintrc.json
 .yarnrc.yml
 renovate.json
 tsconfig.json
-tsconfig.build.json
 vite.config.ts
 yarn.lock
