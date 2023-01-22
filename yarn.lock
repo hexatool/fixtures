@@ -754,7 +754,7 @@ __metadata:
     "@changesets/cli": 2.26.0
     "@hexatool/eslint-config-typescript": 1.0.3
     "@hexatool/fs-copy": 0.0.1-next.0
-    "@hexatool/fs-remove": 0.0.1-next.0
+    "@hexatool/fs-remove": 0.0.1-next.1
     "@hexatool/fs-stat": 0.0.1-next.0
     "@hexatool/fs-temporary": 0.0.1-next.2
     "@hexatool/tsconfig": 18.0.0
@@ -796,6 +796,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hexatool/fs-file-system@npm:0.0.1-next.1":
+  version: 0.0.1-next.1
+  resolution: "@hexatool/fs-file-system@npm:0.0.1-next.1"
+  peerDependencies:
+    graceful-fs: 4.2.10
+  peerDependenciesMeta:
+    graceful-fs:
+      optional: true
+  checksum: 343e624c2c8876b2a21aac67dfdc19484709d63423271dbfebabd59c8cf91debf79dc6aa0ad4936ef71fe1fd5387eb75435753021d82c0bd5498590c135d2475
+  languageName: node
+  linkType: hard
+
 "@hexatool/fs-make-dir@npm:0.0.1-next.0":
   version: 0.0.1-next.0
   resolution: "@hexatool/fs-make-dir@npm:0.0.1-next.0"
@@ -814,12 +826,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hexatool/fs-remove@npm:0.0.1-next.0":
-  version: 0.0.1-next.0
-  resolution: "@hexatool/fs-remove@npm:0.0.1-next.0"
+"@hexatool/fs-remove@npm:0.0.1-next.1":
+  version: 0.0.1-next.1
+  resolution: "@hexatool/fs-remove@npm:0.0.1-next.1"
   dependencies:
-    "@hexatool/fs-file-system": 0.0.1-next.0
-  checksum: 87e7b9bb8cd48f0b3a377de432432b350b9592266c160cf4cd928ba0769f8688588f4e76182c6bc2aa28c7410805eded31549cbe8457e6cc54898809584aa72e
+    "@hexatool/fs-file-system": 0.0.1-next.1
+  checksum: a7eda6ec734e8ddff326f8ad8cf2dd6a310e831325cb94883dabcb2ba62a9d840c5653654f5f6e13fafdaa9cc89cdfd441fc2569dcabedd053f6dcdc798c612c
   languageName: node
   linkType: hard
 
