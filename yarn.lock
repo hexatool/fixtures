@@ -753,7 +753,7 @@ __metadata:
   dependencies:
     "@changesets/cli": 2.26.0
     "@hexatool/eslint-config-typescript": 1.0.3
-    "@hexatool/fs-copy": 0.0.1-next.0
+    "@hexatool/fs-copy": 0.0.1-next.1
     "@hexatool/fs-remove": 0.0.1-next.0
     "@hexatool/fs-stat": 0.0.1-next.0
     "@hexatool/fs-temporary": 0.0.1-next.2
@@ -772,15 +772,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hexatool/fs-copy@npm:0.0.1-next.0":
-  version: 0.0.1-next.0
-  resolution: "@hexatool/fs-copy@npm:0.0.1-next.0"
+"@hexatool/fs-copy@npm:0.0.1-next.1":
+  version: 0.0.1-next.1
+  resolution: "@hexatool/fs-copy@npm:0.0.1-next.1"
   dependencies:
-    "@hexatool/fs-file-system": 0.0.1-next.0
-    "@hexatool/fs-make-dir": 0.0.1-next.0
-    "@hexatool/fs-path-exists": 0.0.1-next.0
-    "@hexatool/fs-stat": 0.0.1-next.0
-  checksum: 1212e7a658ee1c06ec36a84f0d847b583a0798e17aadb8c4bb6b2d810835d7fee0841d779418c187b1bcef489d53fe7a7d09b6097567fde7deaf8aa02f151efc
+    "@hexatool/fs-file-system": 0.0.1-next.1
+    "@hexatool/fs-make-dir": 0.0.1-next.1
+    "@hexatool/fs-path-exists": 0.0.1-next.1
+    "@hexatool/fs-stat": 0.0.1-next.1
+  checksum: 274ecfd859d9953b78202bd1c4c2fc8116ec5a93c097b857d8b43d1681fc59e69a71bb04699a1df149d526362ed6462860d442ebf6102d62367076113a073998
   languageName: node
   linkType: hard
 
@@ -796,6 +796,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hexatool/fs-file-system@npm:0.0.1-next.1":
+  version: 0.0.1-next.1
+  resolution: "@hexatool/fs-file-system@npm:0.0.1-next.1"
+  peerDependencies:
+    graceful-fs: 4.2.10
+  peerDependenciesMeta:
+    graceful-fs:
+      optional: true
+  checksum: 343e624c2c8876b2a21aac67dfdc19484709d63423271dbfebabd59c8cf91debf79dc6aa0ad4936ef71fe1fd5387eb75435753021d82c0bd5498590c135d2475
+  languageName: node
+  linkType: hard
+
 "@hexatool/fs-make-dir@npm:0.0.1-next.0":
   version: 0.0.1-next.0
   resolution: "@hexatool/fs-make-dir@npm:0.0.1-next.0"
@@ -805,12 +817,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hexatool/fs-path-exists@npm:0.0.1-next.0":
-  version: 0.0.1-next.0
-  resolution: "@hexatool/fs-path-exists@npm:0.0.1-next.0"
+"@hexatool/fs-make-dir@npm:0.0.1-next.1":
+  version: 0.0.1-next.1
+  resolution: "@hexatool/fs-make-dir@npm:0.0.1-next.1"
   dependencies:
-    "@hexatool/fs-file-system": 0.0.1-next.0
-  checksum: 9114650068249e763e2d1def1e54cf5e83d0c9e0d6166e3d4152cc4feae78bde357188ead1f2fc16ce4af4bab3561f8a4561b200ee103ab25f0c1f858ad571cc
+    "@hexatool/fs-file-system": 0.0.1-next.1
+  checksum: 7f0a93e4f0d00f27502ac03528f7fc943f28a092fd93d0ffcf7f0b0ba67a980618df6a7a603eab12850051662d55babcef891c1dd2d275c1c929be0fcc491010
+  languageName: node
+  linkType: hard
+
+"@hexatool/fs-path-exists@npm:0.0.1-next.1":
+  version: 0.0.1-next.1
+  resolution: "@hexatool/fs-path-exists@npm:0.0.1-next.1"
+  dependencies:
+    "@hexatool/fs-file-system": 0.0.1-next.1
+  checksum: 341bbd80f9c8e512d02263168d14d05fe181baf77c29677b81f834a21f7f07940a6af16a2e8660bf88e24f58f2b65652e49ac496bc0ecbc515c6bb1b5bc72be9
   languageName: node
   linkType: hard
 
@@ -829,6 +850,15 @@ __metadata:
   dependencies:
     "@hexatool/fs-file-system": 0.0.1-next.0
   checksum: 0757fc437abcaa798ad5dfda01408082c32e67a9dce3a5ccd1c82606e95f3abbb4e2cf0d421503fe6770e554d26069ece37875189ed737c526109de8a6b16930
+  languageName: node
+  linkType: hard
+
+"@hexatool/fs-stat@npm:0.0.1-next.1":
+  version: 0.0.1-next.1
+  resolution: "@hexatool/fs-stat@npm:0.0.1-next.1"
+  dependencies:
+    "@hexatool/fs-file-system": 0.0.1-next.1
+  checksum: 95963bf892205681b0a5cefdabe1d132ecbdb347062d031a5afb64de186fd14bb3bc90edf49d9bf146ecdc1e7262c1a1e400474fb3e0eac0ac44226e35ae470e
   languageName: node
   linkType: hard
 

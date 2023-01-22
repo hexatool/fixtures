@@ -42,7 +42,7 @@
 		"version": "$npm_execpath changeset version"
 	},
 	"dependencies": {
-		"@hexatool/fs-copy": "0.0.1-next.0",
+		"@hexatool/fs-copy": "0.0.1-next.1",
 		"@hexatool/fs-remove": "0.0.1-next.0",
 		"@hexatool/fs-stat": "0.0.1-next.0",
 		"@hexatool/fs-temporary": "0.0.1-next.2",
