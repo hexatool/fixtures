@@ -9,13 +9,13 @@
 ## Installation
 
 ```bash
-npm install --save-dev fixtures
+npm install --save-dev @hexatool/fixtures
 ```
 
 **Using yarn**
 
 ```bash
-yarn add fixtures -dev
+yarn add @hexatool/fixtures -dev
 ```
 
 ## What it does
