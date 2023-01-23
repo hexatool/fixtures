@@ -1,4 +1,4 @@
 {
 	"extends": "@hexatool/tsconfig",
-	"exclude": ["dist", "node_modules"]
+	"exclude": ["dist", "coverage", "node_modules"]
 }

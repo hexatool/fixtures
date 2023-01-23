@@ -3,6 +3,7 @@
 .idea
 .yarn
 spec
+coverage
 .editorconfig
 .eslintignore
 .eslintrc.json
