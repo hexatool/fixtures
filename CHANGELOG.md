@@ -1,5 +1,11 @@
 # @hexatool/fixtures
 
+## 1.0.10
+
+### Patch Changes
+
+- 2adde64: Fix CI build
+
 ## 1.0.9
 
 ### Patch Changes
