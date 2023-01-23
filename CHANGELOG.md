@@ -1,5 +1,11 @@
 # @hexatool/fixtures
 
+## 1.0.11
+
+### Patch Changes
+
+- 82ff0a1: Fix docs
+
 ## 1.0.10
 
 ### Patch Changes
