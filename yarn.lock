@@ -732,7 +732,7 @@ __metadata:
     "@types/signal-exit": 3.0.1
     "@vitest/coverage-c8": 0.28.4
     eslint: 8.33.0
-    fdir: 5.3.0
+    fdir: 6.0.1
     picomatch: 2.3.1
     signal-exit: 3.0.7
     typescript: 4.9.5
@@ -2765,15 +2765,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fdir@npm:5.3.0":
-  version: 5.3.0
-  resolution: "fdir@npm:5.3.0"
+"fdir@npm:6.0.1":
+  version: 6.0.1
+  resolution: "fdir@npm:6.0.1"
   peerDependencies:
     picomatch: 2.x
   peerDependenciesMeta:
     picomatch:
       optional: true
-  checksum: decf21f93c8a32d5b1f2cabc197ff9e97da75d3b9b3d2bc2afaae0aa693c99c42592789a37168010ea720e43590e984deee46397632f457ac459cbb7149a1245
+  checksum: 84d807d411f9f4ec49420a54ed1e3930ad258a071f6cfb48c117548243cb144710bd2c13eb0dc6f93cc8ecea4f7c68256339d2de4ee187ba437e9701a3d29f05
   languageName: node
   linkType: hard
 
