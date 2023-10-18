@@ -907,7 +907,7 @@ __metadata:
     "@hexatool/fs-temporary": 0.0.1-next.5
     "@hexatool/tsconfig": 18.0.0
     "@types/node": 18.18.6
-    "@types/signal-exit": 3.0.2
+    "@types/signal-exit": 3.0.3
     "@vitest/coverage-c8": 0.33.0
     eslint: 8.51.0
     fdir: 5.3.0
@@ -1496,10 +1496,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/signal-exit@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@types/signal-exit@npm:3.0.2"
-  checksum: 8ebbc3790270d29fa45aeb62a5e964cb0ec27220f06955ef9d8e1cd9c69f1c22380a8266e5312163ec1588c91c132d2004f70af1db4dd59e8660255aa52c608a
+"@types/signal-exit@npm:3.0.3":
+  version: 3.0.3
+  resolution: "@types/signal-exit@npm:3.0.3"
+  checksum: fb835fb8e66b38e24d6033b6ca239c68944553be81b15689ec0409616fe380647fe3b229930c7ecfe90d2cb80607e05d2bff819c989941a1278df0c9276a44db
   languageName: node
   linkType: hard
 
