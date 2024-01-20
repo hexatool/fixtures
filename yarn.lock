@@ -904,7 +904,7 @@ __metadata:
     "@hexatool/fs-copy": 0.0.1-next.3
     "@hexatool/fs-remove": 0.0.1-next.3
     "@hexatool/fs-stat": 0.0.1-next.3
-    "@hexatool/fs-temporary": 0.0.1-next.5
+    "@hexatool/fs-temporary": 0.0.1-next.6
     "@hexatool/tsconfig": 18.0.0
     "@types/node": 18.18.6
     "@types/signal-exit": 3.0.3
@@ -955,6 +955,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hexatool/fs-make-dir@npm:0.0.1-next.4":
+  version: 0.0.1-next.4
+  resolution: "@hexatool/fs-make-dir@npm:0.0.1-next.4"
+  dependencies:
+    "@hexatool/fs-file-system": 0.0.1-next.3
+  checksum: 13d4a65d9b3c97b75b8d0ac8c95dcbe451104babe90115a58c6feb87649ef694d0056a818cebe8c073fc3cf6eefad7d7faf64254481cc8944353b200253d57f8
+  languageName: node
+  linkType: hard
+
 "@hexatool/fs-path-exists@npm:0.0.1-next.3":
   version: 0.0.1-next.3
   resolution: "@hexatool/fs-path-exists@npm:0.0.1-next.3"
@@ -982,13 +991,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hexatool/fs-temporary@npm:0.0.1-next.5":
-  version: 0.0.1-next.5
-  resolution: "@hexatool/fs-temporary@npm:0.0.1-next.5"
+"@hexatool/fs-temporary@npm:0.0.1-next.6":
+  version: 0.0.1-next.6
+  resolution: "@hexatool/fs-temporary@npm:0.0.1-next.6"
   dependencies:
     "@hexatool/fs-file-system": 0.0.1-next.3
-    "@hexatool/fs-make-dir": 0.0.1-next.3
-  checksum: e7b514136db31c35db328ba40302cf63198062751f44e22a31ca9415ff1565cf1f09a7b5c423b6aefe6c9771039d9ca561cdca13cc18a07803397f27bd442772
+    "@hexatool/fs-make-dir": 0.0.1-next.4
+  checksum: 9b6dffece9f8045d740e638f53d76504523f04c7c84d260db122af9d564f787b3b6314e770479016b724cedcca1c9a7af2ece90df708aab6db36c16bffdab3bb
   languageName: node
   linkType: hard
 
