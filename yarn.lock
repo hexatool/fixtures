@@ -905,7 +905,7 @@ __metadata:
     "@hexatool/fs-remove": 0.0.1-next.3
     "@hexatool/fs-stat": 0.0.1-next.3
     "@hexatool/fs-temporary": 0.0.1-next.5
-    "@hexatool/tsconfig": 18.0.0
+    "@hexatool/tsconfig": 20.0.1
     "@types/node": 18.18.6
     "@types/signal-exit": 3.0.3
     "@vitest/coverage-c8": 0.33.0
@@ -992,10 +992,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hexatool/tsconfig@npm:18.0.0":
-  version: 18.0.0
-  resolution: "@hexatool/tsconfig@npm:18.0.0"
-  checksum: c31c81ae7a6d44eadc11ef3d1016cf391f5b49444349e2095dbde3291f773530462941319eb90a48383858f7196a65e6ff26535a20df5686af3e266a1479d1c0
+"@hexatool/tsconfig@npm:20.0.1":
+  version: 20.0.1
+  resolution: "@hexatool/tsconfig@npm:20.0.1"
+  checksum: d5bacc82f12d3640084059df4858c3f133402917a1afd8c3715965a8d2f2c2a0123c680d2f61d0d270e2e24f3900220d87707525b40331f468e8124f3e159e36
   languageName: node
   linkType: hard
 
