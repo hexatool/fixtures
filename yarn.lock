@@ -902,7 +902,7 @@ __metadata:
     "@changesets/cli": 2.26.2
     "@hexatool/eslint-config-typescript": 1.0.11
     "@hexatool/fs-copy": 0.0.1-next.3
-    "@hexatool/fs-remove": 0.0.1-next.3
+    "@hexatool/fs-remove": 0.0.1-next.4
     "@hexatool/fs-stat": 0.0.1-next.3
     "@hexatool/fs-temporary": 0.0.1-next.5
     "@hexatool/tsconfig": 18.0.0
@@ -964,12 +964,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hexatool/fs-remove@npm:0.0.1-next.3":
-  version: 0.0.1-next.3
-  resolution: "@hexatool/fs-remove@npm:0.0.1-next.3"
+"@hexatool/fs-remove@npm:0.0.1-next.4":
+  version: 0.0.1-next.4
+  resolution: "@hexatool/fs-remove@npm:0.0.1-next.4"
   dependencies:
     "@hexatool/fs-file-system": 0.0.1-next.3
-  checksum: 0f51848730a619b95c8c6be86ceee232ea8b2af71d54f1f6f4709449ca9e7395c2e9ea77c158d47d7524d7ab6510cb1d9b9c18fb6ee4f70066909efc00772241
+  checksum: 5086d7887e609d1b27c00ba923ab95341dd31acadb31b30e6cdb8978dd66d9ba2f9abc46926a88f3943cd9bfb2c19fe4db542c405af2d07eadd76154664254fc
   languageName: node
   linkType: hard
 
