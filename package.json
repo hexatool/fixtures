@@ -43,7 +43,7 @@
 		"version": "changeset version"
 	},
 	"dependencies": {
-		"@hexatool/fs-copy": "0.0.1-next.3",
+		"@hexatool/fs-copy": "0.0.1-next.4",
 		"@hexatool/fs-remove": "0.0.1-next.3",
 		"@hexatool/fs-stat": "0.0.1-next.3",
 		"@hexatool/fs-temporary": "0.0.1-next.5",
