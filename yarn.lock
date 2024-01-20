@@ -903,7 +903,7 @@ __metadata:
     "@hexatool/eslint-config-typescript": 1.0.11
     "@hexatool/fs-copy": 0.0.1-next.3
     "@hexatool/fs-remove": 0.0.1-next.3
-    "@hexatool/fs-stat": 0.0.1-next.3
+    "@hexatool/fs-stat": 0.0.1-next.4
     "@hexatool/fs-temporary": 0.0.1-next.5
     "@hexatool/tsconfig": 18.0.0
     "@types/node": 18.18.6
@@ -979,6 +979,15 @@ __metadata:
   dependencies:
     "@hexatool/fs-file-system": 0.0.1-next.3
   checksum: 06013d0c6b828e2753c9de7ef4c8523a16735d6ffb0d96f7e6e697497e313ceb9883263fe1d9c25146919e305dcb6acb4e58bf6c41d70d8c44be5bfbc92c1a7b
+  languageName: node
+  linkType: hard
+
+"@hexatool/fs-stat@npm:0.0.1-next.4":
+  version: 0.0.1-next.4
+  resolution: "@hexatool/fs-stat@npm:0.0.1-next.4"
+  dependencies:
+    "@hexatool/fs-file-system": 0.0.1-next.3
+  checksum: 647620e02b4ca1d6eb4853c1ebe247f882b9b3eb0ada710492f56d2810e520658f4e4dbe9c9a0d97ceb1bd0c450122c09658c5127d313293ebc724be14df4a8d
   languageName: node
   linkType: hard
 
